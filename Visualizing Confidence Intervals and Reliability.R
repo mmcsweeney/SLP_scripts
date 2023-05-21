@@ -77,8 +77,8 @@ for (i in 1:3){
   abline(v=pt_score,lty=2,lwd=2)
   
   #label and delineate the width of each confidence interval 
-  segments(x0=tests[i,'CI_95_low'],y0=.003,x1=tests[i,'CI_95_high'],y1=.003,col='darkred',lwd=1.3)
-  segments(x0=tests[i,'CI_90_low'],y0=.006,x1=tests[i,'CI_90_high'],y1=.006,col='darkblue',lwd=1.3)
+  segments(x0=tests[i,'CI_95_low'],y0=0.003,x1=tests[i,'CI_95_high'],y1=0.003,col='darkred',lwd=1.3)
+  segments(x0=tests[i,'CI_90_low'],y0=0.006,x1=tests[i,'CI_90_high'],y1=0.006,col='darkblue',lwd=1.3)
   text(x=(tests[i,'CI_95_low'])-4.5,y=0.003,labels="95% CI",col='darkred',cex=1.2)
   text(x=(tests[i,'CI_90_low'])-4.5,y=0.006,labels="90% CI",col='darkblue',cex=1.2)
   
